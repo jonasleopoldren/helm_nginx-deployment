@@ -28,5 +28,6 @@ spec:
         imagePullPolicy: {{.Values.image.pullPolicy}}
         name: nginx-alpine
         resources:
-          cpu: {{.Values.resources.cpu}}
-          memory: {{.Values.resources.memory}}
+          requets:
+            cpu: {{.Values.resources.cpu}}
+            memory: {{.Values.resources.memory}}
